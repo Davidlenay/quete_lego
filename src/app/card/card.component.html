@@ -1,0 +1,16 @@
+<div class="card">
+  <img [src]="picture" alt="un vrai champion" />
+  <div class="text">
+    <h1>Hello, {{ name }}</h1>
+
+    <div class="age" [hidden]="isShow">
+      <p>Âge : {{ age }}</p>
+    </div>
+
+    <button (click)="toggleDisplay()">Afficher/masquer mon âge</button>
+
+    <p>Citations : {{ citation }}</p>
+
+    <input type="text" [(ngModel)]="citation" />
+  </div>
+</div>
